@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+table {
+	width: 100%; /* %, px, vw, vh, em  */
+}
+
+td {
+	border: 1px solid #000;
+}
+
+
+.center-block {
+	width: 50%; /* Ширина блоку */
+	margin: 10px 10px 10px auto;
+}
+
+.gimn {
+	width: 200px;
+	margin: 0 auto;
+}
+
+.gimn p.right {
+	padding-left: 45px;
+}
+
+span {
+	color: red;
+}
+
+#position {
+	position: relative;
+
+}
+
+#absolute {
+	width: 200px;
+	height: 200px;
+	border: 2px solid red;
+
+	position: absolute;
+	right: 0;
+	top: 0;
+}

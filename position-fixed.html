@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+
+* {
+	box-sizing: border-box;
+}
+
+
+.absolute {
+	border: 1px solid #000;
+	position: fixed;
+	background: #fff;
+	z-index: 10;
+	height: 50px;
+	width: 100%;
+	
+	top: 0;
+}
+
+
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	
+</head>
+<body>
+	<div class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus sed modi eaque minus, possimus perspiciatis. Dolore iusto aliquid ab eveniet, excepturi ad alias assumenda doloremque, error molestiae voluptatem facere velit.</div>
+	<div class="absolute" id="absolute">
+		Блок абсолютно споиціонований
+	</div>
+	<div class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quibusdam rerum, totam ut, eligendi dolor inventore esse placeat accusamus, eum iusto repellendus. Vero molestiae laudantium quae, unde reiciendis voluptatum doloribus. </div>
+	<div class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quibusdam rerum, totam ut, eligendi dolor inventore esse placeat accusamus, eum iusto repellendus. Vero molestiae laudantium quae, unde reiciendis voluptatum doloribus. </div>
+	<div class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quibusdam rerum, totam ut, eligendi dolor inventore esse placeat accusamus, eum iusto repellendus. Vero molestiae laudantium quae, unde reiciendis voluptatum doloribus. </div>
+	<div class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quibusdam rerum, totam ut, eligendi dolor inventore esse placeat accusamus, eum iusto repellendus. Vero molestiae laudantium quae, unde reiciendis voluptatum doloribus. </div>
+	<div class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quibusdam rerum, totam ut, eligendi dolor inventore esse placeat accusamus, eum iusto repellendus. Vero molestiae laudantium quae, unde reiciendis voluptatum doloribus. </div>
+	<div class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quibusdam rerum, totam ut, eligendi dolor inventore esse placeat accusamus, eum iusto repellendus. Vero molestiae laudantium quae, unde reiciendis voluptatum doloribus. </div>
+	<div class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quibusdam rerum, totam ut, eligendi dolor inventore esse placeat accusamus, eum iusto repellendus. Vero molestiae laudantium quae, unde reiciendis voluptatum doloribus. </div>
+	<div class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quibusdam rerum, totam ut, eligendi dolor inventore esse placeat accusamus, eum iusto repellendus. Vero molestiae laudantium quae, unde reiciendis voluptatum doloribus. </div>
+	<div class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quibusdam rerum, totam ut, eligendi dolor inventore esse placeat accusamus, eum iusto repellendus. Vero molestiae laudantium quae, unde reiciendis voluptatum doloribus. </div>
+
+
+	<script>
+
+var i = 0;
+var blk = jQuery('.absolute');
+console.log(blk);
+setInterval(function(){
+	i++;
+	blk.css("top", i + 'px');
+	//blk.css("background-color", "black");
+	if (i == 500) i = 0;
+	//console.log(i);
+	//con
+}, 20);
+
+
+	</script>
+</body>
+</html>
